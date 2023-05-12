@@ -1,0 +1,419 @@
+/* 予約フォームのcss */
+/* layouts.defaults */
+body {
+    background-color: rgb(226, 219, 219);
+    color: black;
+}
+
+header {
+    background-color: #668ad8;;
+}
+
+header h1 {
+    text-align: left;
+    font-family: Georgia;
+    font-size: 60px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 検索ボックス */
+.searchbox1 {
+    width: 100%;
+    height: 500px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbox2 {
+    width: 70%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.searchAreaText {
+    width: 900px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+
+.firstDate {
+    height: 50px;
+    font-size: 21px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 30px;
+    outline: white;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.lastDate {
+    height: 50px;
+    font-size: 21px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 30px;
+    outline: white;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.guest {
+    height: 50px;
+    width: 65px;
+    font-size: 21px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+}
+
+.guestLavel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputFormSubmit {
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.inputFormSubmit:hover{
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.inputFormSubmit:active{
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 5px;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.hotelscount {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* hotelList.blade.php */
+
+.hotelViewItem {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.hotelViewItemLine {
+    width: 100%;
+    height: 320px;
+}
+
+.hoteViewItemlImgArea {
+    margin: 0;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-style: none;
+}
+
+.hotelViewItemImg {
+    width: 100%;
+    height: 100%;
+}
+
+.hotelViewItemTitleAndText{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 200px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(189, 211, 240) !important;
+    align-items: center;
+}
+
+/* テーブル左右のダミー */
+.hotelViewItemLineLeft {
+    width: 25%;
+    height: 300px;
+}
+
+.hotelViewItemLineRight {
+    width: 25%;
+    height: 300px;
+}
+
+
+.hotelTitleAndText p {
+    color: black;
+    font-size: 20px;
+}
+
+.hotelViewItemTitleAndTextDiv div {
+    float: left;
+}
+
+.hotelViewItemTitleAndText_image {
+    width: 350px;
+}
+
+.hotelViewItemTitleAndText_image img {
+    padding-left: 20px;
+}
+
+.hotelViewItemTitleAndText_text {
+    width: 400px;
+    position: relative;
+}
+
+.hotelViewItemTitleAndText_text p {
+    padding-left: 40px;
+}
+
+.hotelViewItemTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    height: 40px;
+}
+
+.hotelDetailForm {
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+}
+
+.hotelViewItemSelectSubmit {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.hotelViewItemSelectSubmit:hover{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.hotelViewItemSelectSubmit:active{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 5px;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+/* hotelDetail.blade.php */
+
+.roomViewItem {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.roomViewItemLine {
+    width: 100%;
+    height: 320px;
+}
+
+.roomViewItemlImgArea {
+    margin: 0;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-style: none;
+}
+
+.roomViewItemImg {
+    width: 100%;
+    height: 100%;
+}
+
+.roomViewItemTitleAndText{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 200px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(189, 211, 240) !important;
+}
+
+.roomViewItemTitleAndText div {
+    float: left;
+}
+
+.roomViewItemTitleAndText_text {
+    width: 300px;
+    position: relative;
+}
+
+.roomViewItemTitleAndText_text p {
+    padding-left: 40px;
+}
+
+.roomViewItemTitleAndText_image {
+    width: 350px;
+}
+
+.roomViewItemTitleAndText_image img {
+    padding-left: 20px;
+}
+
+
+/* テーブル左右のダミー */
+.roomViewItemLineLeft {
+    width: 25%;
+    height: 300px;
+}
+
+.roomViewItemLineRight {
+    width: 25%;
+    height: 300px;
+}
+
+
+.roomTitleAndText p {
+    color: black;
+    font-size: 20px;
+}
+
+.roomViewItemTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    height: 40px;
+}
+
+.roomDetailForm {
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+}
+
+.roomViewItemSelectSubmit {
+    margin-top: 60px !important;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.roomViewItemSelectSubmit:hover{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.roomViewItemSelectSubmit:active{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 5px;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.errorMessage {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

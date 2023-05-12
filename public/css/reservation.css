@@ -1,0 +1,322 @@
+/* 予約フォームのcss */
+/* layouts.reservation */
+body {
+    color: black;
+    background-color: rgb(189, 211, 240);
+}
+
+header {
+    height: 30px;
+}
+
+main h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main p {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* reservationInput.blade.php */
+
+.reservationForm {
+    width: fit-content;
+    width: 1020px;
+    margin: auto;
+    border-style: none !important;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.reservationForm h1 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.pageExplanation {
+    text-align: center;
+}
+
+.selectDateInput {
+    height: 50px;
+    font-size: 21px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 10px;
+    outline: white;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.selectDateLabel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.forDate {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.guest {
+    height: 50px;
+    width: 65px;
+    font-size: 21px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+}
+
+.adultMaleNumber {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.adultWomanNumber {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.childNumber {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.guestLavel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputDiscountText {
+    width: 900px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+
+.inputPaymentBox ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.roomFeeTitle {
+    padding-top: 20px !important;
+}
+
+.roomFeeInTax  {
+    font-weight: bold;
+}
+
+.roomFeeValue {
+    padding-top: 0px !important;
+    margin-left: 40px;
+}
+
+.inputFormSubmit {
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    margin: auto !important;
+    display: block !important;
+}
+
+.inputFormSubmit:hover{
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 20px;
+    margin: auto !important;
+    display: block !important;
+}
+
+.inputFormSubmit:active{
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 20px;
+    margin: auto !important;
+    display: block !important;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.inputFormSubmitBox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* reservationConf.blade.php */
+.reservationConf {
+    width: fit-content;
+    width: 1020px;
+    margin: auto;
+    border-style: none !important;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.reservationConf h1 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.reservationConf p {
+    padding-left: 50px;
+}
+
+/* reservationConf.blade.php */
+.Decision {
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    width: 1020px;
+    height: 500px;
+    border-style: none !important;
+    border-radius: 20px;
+}
+
+.yoyakukakutei {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding-top: 130px;
+}
+
+.toujituhakiwotukete {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.moveReservationSearch {
+    font-size: 22px;
+}
+
+.errorMessage {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    padding-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* reservationCustomerInput.php */
+.customerNameText {
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+
+.customerNameLabel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.customerEmailText {
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+.customerEmailLabel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.customerAddressText {
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+.customerAddressLabel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.customerNumberText {
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+
+.customerNumberLabel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

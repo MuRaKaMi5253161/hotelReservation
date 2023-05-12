@@ -1,0 +1,255 @@
+/* 予約フォームのcss */
+/* layouts.defaults */
+body {
+    background-image: url(../img/hotelSearchBackground.jpg);
+    color: white;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 100px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* reservationSearch.blade.php */
+.searchbox1 {
+    width: 100%;
+    height: 900px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbox2 {
+    width: 70%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.searchAreaText {
+    width: 900px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 218, 219, 0.6);
+    outline: white;
+}
+
+.firstDate {
+    height: 50px;
+    font-size: 21px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 30px;
+    outline: white;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.lastDate {
+    height: 50px;
+    font-size: 21px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 30px;
+    outline: white;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.guest {
+    height: 50px;
+    width: 65px;
+    font-size: 21px;
+    background-color: rgba(217, 218, 219, 0.6);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+}
+
+.guestLavel {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputFormSubmit {
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.inputFormSubmit:hover{
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.inputFormSubmit:active{
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    border-style: none;
+    margin-top: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 5px;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+/* hotelList.blade.php */
+
+.hotelViewItem {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.hotelViewItemLine {
+    width: 100%;
+    height: 320px;
+}
+
+.hoteViewItemlImgArea {
+    margin: 0;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-style: none;
+}
+
+.hotelViewItemImg {
+    width: 100%;
+    height: 100%;
+}
+
+.hotelViewItemTitleAndText{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 200px;
+    font-size: 20px;
+    color: black;
+    border-style:solid;
+    border-color: white;
+    background-color: white;
+}
+
+/* テーブル左右のダミー */
+.hotelViewItemLineLeft {
+    width: 25%;
+    height: 300px;
+}
+
+.hotelViewItemLineRight {
+    width: 25%;
+    height: 300px;
+}
+
+
+.hotelTitleAndText p {
+    color: black;
+    font-size: 20px;
+}
+
+.hotelViewItemTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    height: 40px;
+}
+
+.hotelDetailForm {
+    text-align: center;
+}
+
+.hotelViewItemSelectSubmit {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.hotelViewItemSelectSubmit:hover{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 5px;
+}
+
+.hotelViewItemSelectSubmit:active{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #94b6ff;
+    color: #FFF;
+    border-bottom: none;
+    border-radius: 5px;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.errorMessage {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
