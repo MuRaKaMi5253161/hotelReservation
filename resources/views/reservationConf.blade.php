@@ -63,7 +63,8 @@
             <h1>お支払金額</h1>
             <p>基本料金:{{ $roomFee }}</p>
             <p>消費税:{{ $tax }}</p>
-            <p class="roomFeeInTax">合計金額:{{ $roomFeeInTax }}</p>
+            <p>割引額:{{ $discountValue }}</p>
+            <p class="roomFeeInTax">合計金額:{{ $roomFeeInTaxAndDiscount }}</p>
         </div>
         <div class="inputFormSubmitBox">
             <input type="submit" name="inputFormSubmit" class="inputFormSubmit" value="確定する">

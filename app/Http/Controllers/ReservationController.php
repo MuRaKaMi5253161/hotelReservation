@@ -109,6 +109,8 @@ class ReservationController extends Controller
                         'discountFlag' => true
                     ]);
                     $discountSuccsessFlag = true;
+                    $discountValue = 500;
+                    session(['discountValue' => $discountValue]);
                     break;
                 }
                 Log::emergency($recode);
@@ -121,7 +123,9 @@ class ReservationController extends Controller
             }
         } else {
             $discount = "-";
+            $discountValue = 0;
             session(['discount' => $discount]);
+            session(['discountValue' => $discountValue]);
         }
 
         if ($payment == null) {
@@ -215,6 +219,8 @@ class ReservationController extends Controller
         $roomFee = session('roomFee');
         $tax = session('tax');
         $roomFeeInTax = session('roomFeeInTax');
+        $discountValue = session('discountValue');
+        $roomFeeInTaxAndDiscount = $roomFeeInTax - $discountValue;
 
         return view('reservationConf', [
             'customerNameText' => $customerNameText,
@@ -234,7 +240,9 @@ class ReservationController extends Controller
             'payment' => $payment,
             'roomFee' => $roomFee,
             'tax' => $tax,
-            'roomFeeInTax' => $roomFeeInTax
+            'roomFeeInTax' => $roomFeeInTax,
+            'discountValue' => $discountValue,
+            'roomFeeInTaxAndDiscount' => $roomFeeInTaxAndDiscount
         ]);
     }
 
