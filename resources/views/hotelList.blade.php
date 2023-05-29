@@ -9,18 +9,22 @@
                 {{-- 場所検索テキストボックス --}}
                 <div class="searchArea">
                     <p class="errorMessage">{{ $PurposeErrorMessage }}</p>
-                    <input type="text" name="searchAreaText" class="searchAreaText" placeholder="行き先を記入してください　例) アメリカ">
+                    <input type="text" name="searchAreaText" class="searchAreaText" placeholder="行き先を記入してください　例) 北海道"
+                        value={{ $initialDestinationName }}>
                 </div>
 
                 <div class="searchDateAndGuest">
                     <p class="errorMessage">{{ $GuestErrorMessage }}</p>
                     <p class="errorMessage">{{ $DateErrorMessage }}</p>
-                    <input type="date" class="firstDate" name="firstDate" min={{ $nowDate }}></label>
+                    <input type="date" class="firstDate" value={{ $initialFirstDate }} name="firstDate"
+                        min={{ $nowDate }}></label>
                     ～
-                    <input type="date" class="lastDate" name="lastDate" min={{ $nowDate }}></label>
+                    <input type="date" class="lastDate" value={{ $initialLastDate }} name="lastDate"
+                        min={{ $nowDate }}></label>
 
                     <label class="guestLavel">男性(大人)
                         <select name="adultMale" class="guest">
+                            <option name="adultMale" selected>{{ $initialAdultMale }}</option>
                             <option name="adultMale">0</option>
                             <option name="adultMale">1</option>
                             <option name="adultMale">2</option>
@@ -36,6 +40,7 @@
                     </label>
                     <label class="guestLavel">女性(大人)
                         <select name="adultWomen" class="guest">
+                            <option name="adultWomen" selected>{{ $initialAdultWomen }}</option>
                             <option name="adultWomen">0</option>
                             <option name="adultWomen">1</option>
                             <option name="adultWomen">2</option>
@@ -51,6 +56,7 @@
                     </label>
                     <label class="guestLavel">子供
                         <select name="child" class="guest">
+                            <option name="child" selected>{{ $initialChild }}</option>
                             <option name="child">0</option>
                             <option name="child">1</option>
                             <option name="child">2</option>

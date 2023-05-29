@@ -320,3 +320,23 @@ footer p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.sendEmail {
+    width: 100%;
+    text-align: center;
+    color: rgb(238, 35, 35);
+}
+
+.sendEmailCheck {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transform: scale(2);
+}
+
+.sendEmailLabel {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+

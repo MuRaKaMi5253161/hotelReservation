@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\HotelController;
 use App\Http\Controllers\ReservationController;
-use App\Models\Hotel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//予約フォーム
+// 予約フォーム
 Route::get('/', [ReservationController::class, 'reservationSearch']);
 Route::post('/reservationInput', [ReservationController::class, 'reservationInput']);
 Route::post('/reservationCustomerInput', [ReservationController::class, 'reservationCustomerInput']);
@@ -25,3 +24,23 @@ Route::post('/reservationDecision', [ReservationController::class, 'reservationD
 Route::post('/hotelList', [HotelController::class, 'hotelInfoPost']);
 Route::post('/hotelDetail', [HotelController::class, 'hotelDetailPost']);
 Route::post('/hotelListSearch', [HotelController::class, 'hotelListSearch']);
+
+// URL直打ち対策
+Route::get('/hotelList', function () {
+    return redirect('/');
+});
+Route::get('/hotelDetail', function () {
+    return redirect('/');
+});
+Route::get('/hotelListSearch', function () {
+    return redirect('/');
+});
+Route::get('/reservationCustomerInput', function () {
+    return redirect('/');
+});
+Route::get('/reservationConf', function () {
+    return redirect('/');
+});
+Route::get('/reservationDecision', function () {
+    return redirect('/');
+});

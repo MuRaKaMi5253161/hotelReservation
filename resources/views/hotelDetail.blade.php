@@ -9,6 +9,7 @@
             $room_info_id = $room->id;
             $room_roomCount = $room->roomCount;
             $remainingError = '';
+            
             foreach ($reservation as $res) {
                 $res_room_info_id = $res->room_info_id;
             

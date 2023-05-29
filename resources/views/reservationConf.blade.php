@@ -17,7 +17,7 @@
 
         <div class="selectDate">
             <h1>メール</h1>
-            <p>メール{{ $customerEmailText }}</p>
+            <p>メール：{{ $customerEmailText }}</p>
         </div>
 
         <div class="selectDate">
@@ -66,6 +66,12 @@
             <p>割引額:{{ $discountValue }}</p>
             <p class="roomFeeInTax">合計金額:{{ $roomFeeInTaxAndDiscount }}</p>
         </div>
+
+        <div class="sendEmail">
+            <label class="sendEmailLabel"><input type="checkbox" class="sendEmailCheck" name="sendEmailCheck">
+                予約完了メールを送信する</label>
+        </div>
+
         <div class="inputFormSubmitBox">
             <input type="submit" name="inputFormSubmit" class="inputFormSubmit" value="確定する">
         </div>

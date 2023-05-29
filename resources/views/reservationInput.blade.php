@@ -37,7 +37,8 @@
 
     <div class="inputDiscountBox">
         <h1 class="itemTitle">割引コード</h1>
-        <input type="text" class="inputDiscountText" name="discount" placeholder="割引コードを入力してください" maxlength="8">
+        <input type="text" class="inputDiscountText" name="discount" placeholder="割引コードを入力してください" maxlength="8"
+            value={{ $initialDiscount }}>
         <p class="errorMessage">{{ $DiscountErrorMessage }}</p>
     </div>
 
